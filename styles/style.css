@@ -52,21 +52,23 @@ header{
         color:rgb(12, 3, 116);
         background: rgba(128, 128, 128, 0.481);
         text-align: center;
-
+        position: relative;
+        overflow: hidden;
 }
 .moving-text {
     position: absolute;
-    margin-top: -25px;
+    top: 0;
+    left: 0;
     white-space: nowrap;
-    animation: moveText 5s linear infinite;
+    animation: moveText 8s linear infinite;
 }
 
 @keyframes moveText {
-    from {
-        left: -200px;
+    0% {
+        transform: translateX(100%);
     }
-    to {
-        left: 100%;
+    100% {
+        transform: translateX(-100%);
     }
 }
 
