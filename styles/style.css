@@ -46,7 +46,7 @@ header{
         }
 
 .banner{
-        padding:auto;
+        padding: 12px 0;
         margin-top: 20px;
         font-size: large;
         color:rgb(12, 3, 116);
@@ -54,11 +54,13 @@ header{
         text-align: center;
         position: relative;
         overflow: hidden;
+        min-height: 48px;
 }
 .moving-text {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
     white-space: nowrap;
     animation: moveText 8s linear infinite;
 }
