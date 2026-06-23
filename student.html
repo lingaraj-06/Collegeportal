@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Student Information</title>
+    <body>
+        <h1>Student Names</h1>
+        <div id="output"></div>
+        <script>
+            let stu =["A", "B", "C"];
+            let result = "";
+            for(let i=0; i<stu.length; i++){
+                switch(stu[i]){
+                    case "A":
+                        result += "<p>Ambi</p>";
+                        break;
+                    case "B":
+                        result += "<p>Bala</p>";
+                        break;
+                    default:
+                        result += "<p>Name Not In List</p>";
+                }
+            }
+            document.getElementById("output").innerHTML = result;
+        </script>
+    </body>
+</html>

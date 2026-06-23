@@ -1,0 +1,27 @@
+.mass {
+   width:300px;
+    height:200px;
+    background-color: #e77e7e;
+    border:2px solid rgb(227, 15, 227);
+    padding:20px;
+    text-align:center;
+}
+
+*{
+    background-color: #aed1f1;
+}
+
+.bedy {
+    margin:0;
+    height:100vh;
+
+    display:flex;
+    justify-content:center; /* Horizontal center */
+    align-items:center;
+}
+
+.miss {
+    display:flex;
+    justify-content:center; /* Horizontal center */
+    align-items:center;
+}

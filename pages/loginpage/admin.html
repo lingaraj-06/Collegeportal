@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Admin Page</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1 id="result" style="text-align: center;"></h1>
+        <p style="text-align: center;">This is the admin page. You can manage the portal from here.</p>
+        <div class="miss"><button onclick="logout()">Logout</button></div>
+    <script>
+        let username = sessionStorage.getItem("username");
+        document.getElementById("result").innerHTML = "Welcome, " + username;
+        function logout() {
+            sessionStorage.clear();
+            window.location.href = "login.html";
+        }
+    </script>
+    </body>
+</html>
